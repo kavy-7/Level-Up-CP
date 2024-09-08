@@ -109,7 +109,7 @@ btnStop.addEventListener('click',()=>{
     chrome.storage.local.set({stopDate: currentDate.toDateString()});
     localStorage.setItem("stopDate",JSON.stringify(currentDate.getDate()));
     chrome.storage.local.set({toComp:currentDate.getDate()});
-    const updatedTime = new Date(currentDate.getTime() + (2* 60 * 1000));
+    const updatedTime = new Date(currentDate.getTime() + (3 * 60 * 60 * 1000));
     chrome.storage.local.set({stopTime: updatedTime.toString()});
 })
 
