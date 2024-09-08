@@ -1,1 +1,2 @@
-# Level-Up-CP
+# Level-Up-CP Chrome Extension <br>
+
