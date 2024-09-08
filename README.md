@@ -6,7 +6,7 @@ Welcome to the Level-Up-CP Chrome extension! This tool is designed to help you s
   * <b>Set a Daily Target:</b> Define a daily target to stay motivated. The default target is set to 1 problem.
   * <b>Focus on Codeforces:</b> If your target is not met, you'll be redirected to Codeforces problems to help minimize distractions and procrastination.
   * <b>Set Target Once:</b> You can only set or adjust your daily target once per day.
-  * <b>Keep Studying:</b> The stop button will not affect redirection for platforms like leetcode,gfg,codechef,cf,unstop,linkedin,github,topcoder,atcoder,hackerearth,codingninjas,any google website allowing you to study and practice on these platforms without interruption.
+  * <b>Keep Studying:</b> This extension will not redirect on platforms like leetcode,gfg,codechef,cf,unstop,linkedin,github,topcoder,atcoder,hackerearth,codingninjas,any google website allowing you to study and practice on these platforms without interruption.
 ### Stop Button : 
   * <b>Stop Redirecting:</b> Use the stop button to pause the redirection feature for 3 hours in emergency situations(only once a day).
 ### Upcoming Contest : 
