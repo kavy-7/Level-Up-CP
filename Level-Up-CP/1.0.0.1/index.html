@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+    <!-- Navbar -->
+        <div class="navbar">
+          <div class="navbarContent">
+            <!-- <div class="options"> -->
+              <div class="btnMain button okactive">
+                Calendar
+              </div>
+              <div class="btnFil button">
+                  Platforms
+              </div>
+              <div class="btnTarget button">
+                  Daily Target
+              </div>
+            <!-- </div> -->
+            <div class="profile">
+              <a href="https://github.com/kavy-7/Level-Up-CP" id="githuba" target="_blank">
+                <i id="github" class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kavy-singla-a7659a28b/" id="linkedina" target="_blank">
+                <i id="linkedin" class="fa-brands fa-linkedin"></i>
+              </a>
+            </div> 
+          </div>
+        </div>
+
+    <!-- Calendar Section -->
+        <div class="mainSection">
+            <div class="mainSub">
+                <div class="btnToday button okactive">
+                    Today
+                </div>
+                <div class="btnUpcoming button">
+                    All Contests
+                </div>
+            </div>
+            <div class="mainContent">
+            </div>
+        </div>
+
+    
+    <!-- Filter Section -->
+        <div class="filSection hidden">
+            <div class="heading">Choose Platform</div>
+            <div class="platforms">
+              <div class="options">
+                <div class="logo">
+                  <img src="images/codeforces.png" alt="codeforces" >
+                  <span>Codeforces</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="codeforces.com" id="host1" >
+                </div>
+            </div>
+  
+            <div class="options">
+                <div class="logo">
+                  <img src="images/codechef.png" alt="codechef" >
+                  <span>Codechef</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="codechef.com" id="host2" >
+                </div>
+            </div>
+  
+            <div class="options">
+                <div class="logo">
+                  <img src="images/atcoder.png" alt="atcoder" >
+                  <span>Atcoder</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="atcoder.jp" id="host3" >
+                </div>
+            </div>
+  
+            <div class="options">
+                <div class="logo">
+                  <img src="images/leetcode.png" alt="leetcode" >
+                  <span>Leetcode</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="leetcode.com" id="host4" >
+                </div>
+            </div>
+  
+            <div class="options">
+                <div class="logo">
+                  <img src="images/codingNinja.png" alt="codingNinja" >
+                  <span>Coding Ninja</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="codingninjas.com/codestudio" id="host5" >
+                </div>
+            </div>
+  
+            <div class="options">
+                <div class="logo">
+                  <img src="images/HackerEarth.png" alt="hackerearth" >
+                  <span>HackerEarth</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="hackerearth.com" id="host6" >
+                </div>
+            </div>
+  
+            <div class="options">
+                <div class="logo">
+                  <img src="images/GeeksforGeeks.png" alt="gfg" >
+                  <span>GeeksforGeeks</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="geeksforgeeks.org" id="host7" >
+                </div>
+            </div>
+  
+            <div class="options">
+                <div class="logo">
+                  <img src="images/topcoder.png" alt="Topcoder" >
+                  <span>Topcoder</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="topcoder.com" id="host8" >
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <!-- Daily Target Section -->
+        <div class="sectionDaily hidden">
+                <div class="newUser">
+                    <div class="heading">Get Started</div>
+                    <img src="/images/chatbox.png" alt="">
+                      <div class="takeInput">
+                        <label for="handleName">
+                          Enter your CodeForces Username: 
+                        </label>
+                        <input type="text" name="handleName" id="handleName" placeholder="Enter your Username" required>
+                        <button class="btnUserName">Submit</button>
+                      </div>
+                    <div class="handleError"></div>
+                </div>
+                <div class="Target hidden">
+                  <div class="targetInput">
+                    <label for="targetNum">
+                      Enter your today's target :
+                    </label>
+                    <input type="number" id="targetNum" placeholder="Enter Target">
+                    <button class="btnSetTarget">Submit</button>
+                    <div class="handleNumError"></div>
+                  </div>
+                  <div class="emergency">
+                    <div class="first">
+                      <button class="btnStop">Stop</button>
+                      <div>You can only press this button once in a day it will stop redirecting for three hours</div>
+                    </div>
+                    <div class="timer hidden"> 
+                  </div>
+                  </div>
+                  <div class="last">
+                  <div class="first">
+                    <img src="/images/chatbox.png" alt="chatbox">
+                    <div class="showTarget">
+                        default target is 1 
+                    </div>
+                    <div class="userTarget hidden">
+                  </div>
+                </div>
+                <div class="second"> 
+                  <div class="changeLine">Is the extension not working properly?</div>
+                  <div class="changeLine2">Make sure your username is correct</div>
+                  <div class="changeLine3">You can change and check username using this button</div>
+                  <button class="btnChangeUserName">Change username</button>
+                </div>
+                </div>
+                </div>
+                <div class="userName hidden">
+                <div class="usernameChange">
+
+                </div>
+                <button class="goBack hidden">Submit</button>
+                <div class="newhandleError"></div>
+                </div>
+        </div>
+        <div class="footer">
+            <span>For any error or if you have any suggestions , please email 
+              <a href="mailto:kavyasingla063@gmail.com" target="_blank">here</a>
+            </span>
+            <span>Version <a href="https://github.com/kavy-7/Level-Up-CP" target="_blank">1.0.0.1</a></p>
+        </div>
+    </div>
+    <script src="javascript/index.js"></script>
+</body>
+</html>

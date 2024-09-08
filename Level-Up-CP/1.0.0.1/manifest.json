@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Level UP CP",
+    "description": "An extension that level up your competitive programming skills by never missing a contest and solving daily problems.",
+    "version": "1.0.0.1",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "logo/growth.png"
+    },
+    "background": {
+      "service_worker": "javascript/background.js"
+   },
+   "icons": {
+   "16": "logo/icon16.png",
+   "32": "logo/icon32.png",
+   "48": "logo/icon48.png",
+   "128": "logo/icon128.png"
+  },
+   "permissions": [ "tabs", "storage" ]
+}
